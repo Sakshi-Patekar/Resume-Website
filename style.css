@@ -305,9 +305,7 @@ blockquote {
   .btn { transition: none; }
 }
 
-/* ---------- Nav email button and dark-on-light buttons ---------- */
-.site-nav a.nav-cta { background: var(--gold); color: var(--espresso); padding: 0.55rem 1.1rem; border-radius: 999px; border-bottom: 0; min-height: 44px; display: inline-flex; align-items: center; }
-.site-nav a.nav-cta:hover { background: var(--gold-soft); color: var(--espresso); }
+/* ---------- Buttons on light backgrounds ---------- */
 .btn { min-height: 44px; }
 .btn.dark { color: var(--espresso); border-color: var(--suede); }
 .btn.dark:hover { background: var(--espresso); color: var(--gold-soft); }
@@ -315,14 +313,13 @@ blockquote {
 .btn.solid.dark:hover { background: var(--suede); color: #fff; }
 main .hero-links { margin-top: 1.5rem; }
 
-/* ---------- Certificate thumbnails, gallery and card photos ---------- */
-a.thumb { display: inline-block; width: 96px; }
-a.thumb img { width: 100%; height: auto; border: 1px solid var(--line); }
-a.thumb:hover img { border-color: var(--gold); }
-.entry a.thumb { width: 140px; margin-top: 0.5rem; }
+/* ---------- Image galleries and card photos ---------- */
 .card.wide { grid-column: 1 / -1; }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; align-items: start; }
 .gallery figure, .card-photo { margin: 0; }
 .gallery img, .card-photo img { width: 100%; height: auto; border: 1px solid var(--line); }
 .gallery figcaption, .card-photo figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.4rem; }
 .card-photo { margin-bottom: 0.75rem; }
+
+.cert-img { width: 100%; max-width: 320px; height: auto; margin-top: 0.75rem; border: 1px solid var(--line); }
+.gallery.certs { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top: 1.5rem; }
